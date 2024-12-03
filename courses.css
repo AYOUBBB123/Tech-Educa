@@ -1,0 +1,506 @@
+/*  by default values  */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: "poppins"  , sans-serif;
+    outline: none;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    line-height: 1.5;
+
+}
+h1,h2,h3,h4,h5,h6{
+    padding: 0%;
+    margin: 0%;
+}
+ul, ol {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+span {
+    font-size: .9rem;
+    color: #757373;
+
+}
+
+h6{
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+
+}
+p{
+    font-size: 1rem;
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar{
+    color: #ffffff;
+}
+
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(21, 21, 100);
+}
+
+
+/* end of  by default values  */
+
+/* nav bar */
+
+nav{
+    display: flex;
+    position: fixed;
+    width: calc(100% );
+    background-color: #fff;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+
+}
+nav img{
+    width: 150px;
+    cursor: pointer;
+    margin: 0vw 5vw;
+
+}
+nav .navigation{
+    display: flex;
+}
+nav .navigation #menu-btn{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+nav .navigation #menu-close{
+    display: none;
+
+}
+nav .navigation ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0vw 5vw;
+
+}
+nav .navigation ul li{
+    margin-left: 30px;
+
+
+}
+nav .navigation ul li a{
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 800ms 100ms;
+}
+nav .navigation ul li:nth-of-type(4) a{
+    color: #f3c94bd2;
+
+}
+
+nav .navigation ul li a:hover {
+    color: #FDC92B;
+}
+
+
+
+
+/*end of  nav bar */
+
+
+
+
+/* home */
+
+#home{
+    background-image: 
+    linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),
+    url(images/back2.jpg)
+    ;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    padding-top: 40px;
+    box-sizing: border-box;
+
+}
+
+#home h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+
+}
+
+#home p{
+    width: 50%;
+    color: #fff;
+    padding-bottom: 1VW;
+
+
+}
+
+
+#home a{
+    font-size: .9rem;
+    padding: 13px 35px;
+    background-color:white ;
+    font-weight: 600;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#home a.blue{
+    color: #fff;
+    background: rgb(21, 21, 100);
+    margin-right:.5vw;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 800ms 100ms;
+
+}
+#home a.blue:hover{
+    background: #fff;
+    color: rgb(21, 21, 100);
+    
+}
+
+#home a.yellow{
+    color: #fff;
+    background: #FDC92B;
+    margin-left: .5vw;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 800ms 100ms;
+
+}
+#home a.yellow:hover{
+    background: #fff;
+    color: rgb(21, 21, 100);
+    
+}
+
+
+/* end of home */
+
+
+
+/* Course */
+
+#course{
+    padding: 8vw;
+    text-align: center;
+
+}
+#course .course-box{
+    display: grid ;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 1rem; 
+    margin-top: 30px;
+}
+#course  h5{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+}
+
+#course .courses{
+    text-align: start;
+    background-color: #f9f9ff;
+    height: 100%;
+    position: relative;
+    box-shadow: 0px 2px 12px 0 rgba(139, 139, 139, 0.35);
+
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms 100ms;
+}
+#course .courses:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 2px 12px 0 rgba(59, 59, 59, 0.35);
+
+}
+
+#course .courses img{
+    width: 100%;
+    height: 60%;
+    background-position: center;
+    background-size: cover;
+}
+
+#course .courses .details{
+    padding: .9VW;
+}
+#course .courses .details i{
+    color: #FDC92B;
+    font-size: .9rem;
+}
+
+#course .courses .cost{
+    background: rgb(74, 74, 136);
+    color: #fff;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30%;
+    right: 5%;
+}
+
+/* End of courses  */
+
+
+
+
+/* footer */
+
+footer{
+    padding: 6vw  8vw 1vw 8vw;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
+
+footer .footer-col{
+    padding-bottom: 20px;
+}
+footer h3{
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+footer ul {
+    padding: 0%;
+}
+
+footer ul li{
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms 109ms;
+
+}
+footer ul li:hover{
+    color: rgba(241, 240, 245, 0.863);
+
+}
+ 
+footer p{
+    color: #7b838a;
+}
+footer .subscribe{
+    margin-top: 20px;
+}
+
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    border: none;
+    outline: none;
+    background-color: #334f6c;
+    color: #f3f3fa;
+}
+
+footer button{
+    padding: 15px 12px ;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #FDC92B;
+    color: rgb(21, 21, 100);
+    cursor: pointer;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms 109ms;
+
+}
+
+footer button:hover{
+    color: rgb(21, 21, 100);
+    background-color: #fff;
+   
+}
+
+footer .copyright{
+    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: solid 1px #7b838a;
+    padding-bottom: 0%;
+    
+}
+footer .copyright p{
+    color: #c2c2c7da;
+}
+footer .copyright .pro-links{
+    display: flex;
+    gap: .8rem;
+
+}
+footer .copyright i{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #a0a9b1;
+    cursor: pointer;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms 109ms;
+
+    
+}
+
+footer .copyright i:hover{
+    scale: 1.1;
+    color: #f3f3fa;
+    
+}
+
+
+/* End of Footer */
+
+
+
+
+/* media quary */
+
+@media (max-width : 769px) {
+    html{
+        font-size: 15px;
+    }
+    nav{
+        padding: 15px 20px;
+    }
+    nav img{
+        width: 130px;
+    }
+
+    /* Hamburger Menu */
+
+    nav .navigation #menu-btn{
+        display: initial;
+    }
+    nav .navigation #menu-close{
+        display: initial;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        font-size: 1.8rem;
+        color: white;
+        padding: 30px 0px 20px 20px;
+        width: 100%;
+    
+    }
+    nav .navigation ul{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 100vh;
+        background:rgba(17, 20, 104,.45) ;
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255, 255, 255, 0.185);
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        transition: .3s ease-in-out;
+    }
+    nav .navigation ul.active{
+        right: 0px;
+
+    }
+    nav .navigation ul li{
+        padding: 0px 0 20px 40px ;
+    }
+    nav .navigation ul li a{
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    nav .navigation ul li:nth-of-type(4) a{
+        color: #FDC92B;
+    }
+
+        /* Hamburger Menu */
+
+
+    #home{
+        padding-top: 0%;
+    }
+
+    #home p{
+        width: 80%;
+    }
+
+    
+    #course{
+        padding: 8vw 6vw 10vw 6vw;
+    }
+    
+    #course .courses .details{
+        margin-top: 10%;
+        text-align: center;
+        padding-left: 5vw;
+    }
+
+    #course .courses .details h6{
+        font-size: 1.7rem;
+        padding: 10px 0;
+    }
+    #course .courses .details span{
+        font-size: 1.2rem;
+    }
+    #course .courses .details .star{
+        font-size: 1.2rem;
+    }
+
+
+
+    footer h3{
+        padding-bottom: 10px;
+    }
+    footer button {
+        margin-top: 12px;
+    }
+}
+
+@media (max-width : 540px){
+    #course .courses .details h6{
+        font-size: 1.3rem;
+        padding: 0;
+    }
+    #course .courses .details span{
+        font-size: 1.1rem;
+    }
+    #course .courses .details .star{
+        font-size: 1.1rem;
+    }
+
+}
+
